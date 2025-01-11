@@ -1,0 +1,29 @@
+const mongoose = require("mongoose");
+
+exports.ConnectDB = async () => {
+  try {
+    await mongoose
+    .connect(process.env.MONGO_URI, {
+      dbName: "MERN_STACK_TASK_MANAGEMENT",
+    });
+    console.log(`> the db is connect with ${mongoose.connection.host}`.bgRed);
+  } catch (error) {
+    mongoose.disconnect();
+    process.exit(1);
+  }
+};
+
+// import mongoose from "mongoose";
+
+// export const dbConnection = () => {
+//   mongoose
+//     .connect(process.env.MONGO_URI, {
+//       dbName: "MERN_STACK_TASK_MANAGEMENT",
+//     })
+//     .then(() => {
+//       console.log("Connected to database!");
+//     })
+//     .catch((err) => {
+//       console.log(`Some error occured while connecting to database! : ${err}`);
+//     });
+// };
