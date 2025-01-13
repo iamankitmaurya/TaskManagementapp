@@ -40,15 +40,13 @@ Copy code
 npm run example
 Features
 List the key features of your project.
-### Demo Video
-
-<div align="center">
-  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=6l8RWV8D-Yo&list=PPSV" 
-  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 
 Feature 1   add new task
+
+https://github.com/user-attachments/assets/fa98d707-9e9b-48f1-880a-0d4a11cf68aa
+
+
 Feature 2   update task
 Feature 3   delete the task
 
